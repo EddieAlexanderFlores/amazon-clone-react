@@ -15,7 +15,7 @@ function App() {
 
   // Piece of code which runs based on a given condition. useEffect
   useEffect(() => {
-    const unsubscribe = auth.onAuthStateChanged((authUser) => {
+    const unsubscribe = auth.onAuthStateChanged(authUser => {
       if (authUser) {
         // User is signed in, see docs for a list of available properties
         // https://firebase.google.com/docs/reference/js/firebase.User
@@ -31,7 +31,7 @@ function App() {
     // No longer insterested in auth changes. remove function inside onAuthStateChanged.
     // in other words, stop checking for auth changes.
     return () => unsubscribe();
-  }, []);
+  }, [dispatch]);
 
   return (
     <Router>
