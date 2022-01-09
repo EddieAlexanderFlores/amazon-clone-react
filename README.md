@@ -1,3 +1,18 @@
+# Amazon-Clone React Web App
+
+This is my simple "Amazon Clone" react.js web app. It does not have the full features of Amazon.
+Only Features:
+* Create account
+* Sign in
+* Sign out
+* Add items to the basket
+* Remove items from the basket
+* Displays the Subtotal in Checkout page
+
+My app does not check if email exists. you can enter anything on the Register form, ex: iamthemaster@myworld.com
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
