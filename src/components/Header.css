@@ -1,0 +1,139 @@
+.header {
+  width: 100%;
+  background-color: black;
+  padding: 15px;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+}
+
+.header-links-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  cursor: pointer;
+  width: 100px;
+  object-fit: contain;
+  margin-right: 15px;
+  padding-top: 1px;
+}
+
+.header-search-container {
+  display: flex;
+  flex: 1;
+}
+
+.header-mobile-search-container {
+  display: none;
+  width: 100%;
+}
+
+.header-search-input {
+  height: 40px;
+  padding: 10px;
+  margin-left: 15px;
+  font-size: 0.9375em;
+  border: none;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.header-search-icon {
+  cursor: pointer;
+  background-color: #cd9042;
+  padding: 5px;
+  margin-right: 15px;
+  width: 45px !important;
+  height: 40px !important;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header-link {
+  color: white;
+  text-decoration: none;
+}
+
+.header-option {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.header-option-one {
+  font-size: 10px;
+}
+
+.header-option-two {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.header-option-basket {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.header-basket-count {
+  margin-left: 7px;
+}
+
+@media screen and (max-width: 736px) {
+  .header-links-container {
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .header-logo {
+    width: 80px;
+  }
+
+  .header-search-container {
+    display: none;
+  }
+
+  .header-mobile-search-container {
+    display: flex;
+    margin-top: 10px;
+  }
+
+  .header-search-input {
+    margin-left: 0px;
+  }
+
+  .header-search-icon {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .header-nav span {
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header-nav span {
+    font-size: 0.52em;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .header-logo {
+    width: 55px;
+  }
+
+  .header-nav span {
+    font-size: 0.4em;
+  }
+}
